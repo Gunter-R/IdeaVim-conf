@@ -20,8 +20,12 @@ let g:WhichKeyDesc_refactor = "<leader>r refactor"
 
 map <leader>rr <Action>(RenameElement)
 let g:WhichKeyDesc_rename = "<leader>rr rename"
+
 map <leader>ra <Action>(Refactorings.QuickListPopupAction)
 let g:WhichKeyDesc_refactor = "<leader>ra all refactors"
+
+map <leader>rf <Action>(ReformatCode)
+let g:WhichKeyDesc_file_reformat = "<leader>rf file reformat"
 
 
 " -- execution --
@@ -33,7 +37,7 @@ let g:WhichKeyDesc_run = "<leader>er run"
 map <leader>ec <Action>(RunClass)<Action>(ActivateRunToolWindow)
 let g:WhichKeyDesc_run_class = "<leader>ec under cursor"
 
-map <leader>es <Action>(RunAnything)<Action>(ActivateRunToolWindow)
+map <leader>es <Action>(RunAnything)
 let g:WhichKeyDesc_select = "<leader>es select"
 
 
@@ -80,6 +84,10 @@ let g:WhichKeyDesc_previous_splitter = "<leader>tp previous split"
 " -- misc --
 map <leader>i <Action>(ShowHoverInfo)
 let g:WhichKeyDesc_show_info = "<leader>i show info"
+
+map <leader>c <Action>(ExpandCollapseToggleAction)
+let g:WhichKeyDesc_toggle_collapse = "<leader>c collapse"
+
 
 
 
